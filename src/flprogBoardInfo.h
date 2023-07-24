@@ -8,6 +8,13 @@ FLPROG_UART0_TX  .... FLPROG_UART12_TX  -  Аналогично для пина 
 
 #pragma once
 #include "Arduino.h"
+
 #ifdef ARDUINO_ARCH_STM32
 #include "variant\stm32\flprogBoardInfoStm32.h"
 #endif
+
+namespace flprog
+{
+    String getBoardInfo();
+    String getUartBoardInfo();
+};

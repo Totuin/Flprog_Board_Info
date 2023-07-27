@@ -7,6 +7,6 @@ void setup()
 
 void loop()
 {
-    Serial.print(flprog::getBoardInfo());
+    Serial.print(flprogBoardInfo::getBoardInfo());
     delay(2000);
 }

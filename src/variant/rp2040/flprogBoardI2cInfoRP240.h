@@ -1,0 +1,10 @@
+#pragma once
+#include "flprogBoardInfoRP240.h"
+#ifdef ARDUINO_ARCH_RP2040
+#define FLPROG_HAS_I2C0
+#define FLPROG_I2C0_SDA PIN_WIRE0_SDA
+#define FLPROG_I2C0_SCL PIN_WIRE0_SCL
+#define FLPROG_HAS_I2C1
+#define FLPROG_I2C1_SDA PIN_WIRE1_SDA
+#define FLPROG_I2C1_SCL PIN_WIRE1_SCL
+#endif

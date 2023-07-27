@@ -4,6 +4,9 @@
 #ifdef HAVE_HWSERIAL0
 #define FLPROG_HAS_UART0 "Hardware UART Serial"
 #endif
+#ifdef USBCON
+#define FLPROG_HAS_UART0 "USB UART Serial"
+#endif
 #ifdef HAVE_HWSERIAL1
 #define FLPROG_HAS_UART1 "Hardware UART Serial1"
 #endif
